@@ -1,0 +1,127 @@
+html {
+  font-size: 62.5%;
+}
+
+.app-container {
+  max-width: 960px;
+  margin: auto;
+  font-size: 1.6rem;
+}
+
+#overlay-loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(204, 204, 204, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes loading {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.overlay-loading_icon {
+  font-size: 3.2rem;
+  animation: loading 1s linear infinite;
+}
+
+.is-display-loading {
+  display: flex !important;
+}
+
+.form {
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  padding-bottom: 12px;
+}
+
+.form_header {
+  margin: 0;
+  padding: 16px;
+  background-color: #0fab63;
+  color: #fff;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.form-container {
+  padding: 12px 24px;
+}
+
+.form-input-wrapper {
+  display: flex;
+  margin-bottom: 8px;
+  padding: 8px;
+  outline: none;
+  align-items: center;
+}
+
+.form-input-wrapper label {
+  width: 200px;
+  text-transform: capitalize;
+}
+
+.form-input-wrapper input {
+  flex: 1;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.form-input-wrapper input:focus {
+  border-color: #666;
+  outline: none;
+}
+
+#form__input-user-name {
+}
+
+#form__input-full-name {
+}
+
+#form__input-emai {
+}
+
+#form__input-birthday {
+}
+
+.form-control {
+  margin-left: 200px;
+  padding: 0 12px;
+}
+
+.form-control button {
+  width: 72px;
+  padding: 8px 12px;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+#form-control_save-btn {
+  background-color: #0fab63;
+  color: #fff;
+}
+
+#form-control_save-btn:hover {
+  background-color: #0d8b51;
+}
+
+#form-control_reset-btn {
+  background-color: #ffc107;
+  color: #333;
+}
+
+#form-control_reset-btn:hover {
+  background-color: #ffcf3c;
+}

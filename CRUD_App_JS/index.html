@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<link>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./style.css"></link>
+  <title>CRUD App</title>
+</head>
+<body>
+  <div class="app-container">
+    <div id="overlay-loading">
+      <i class="fa-solid fa-spinner overlay-loading_icon"></i>
+    </div>
+    <div class="form">
+      <h3 class="form_header">Register user account</h3>
+      <form class="form-container">
+        <div class="form-input-wrapper">
+          <label for="form__input-user-name">User Name: </label>
+          <input type="text" id="form__input-user-name">
+        </div>
+        <div class="form-input-wrapper">
+          <label for="form__input-full-name">Full Name: </label>
+          <input type="text" id="form__input-full-name">
+        </div>
+        <div class="form-input-wrapper">
+          <label for="form__input-email">Email: </label>
+          <input type="email" id="form__input-email">
+        </div>
+        <div class="form-input-wrapper">
+          <label for="form__input-birthday">Birthday: </label>
+          <input type="date" id="form__input-birthday">
+        </div>
+        <div class="form-control">
+          <button id="form-control_save-btn">Save</button>
+          <button id="form-control_reset-btn">Reset</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+  <script src="./index.js"></script>
+</body>
+</html>
