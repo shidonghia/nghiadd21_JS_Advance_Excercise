@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style.css"></link>
   <title>CRUD App</title>
 </head>
@@ -12,6 +13,13 @@
   <div class="app-container">
     <div id="overlay-loading">
       <i class="fa-solid fa-spinner overlay-loading_icon"></i>
+    </div>
+    <div id="delete-user-modal">
+      <div class="delete-user-alert">
+        <p>Are you sure want to delete this user ?</p>
+        <button class="btn" id="delete-user-alert_cancel-btn" onclick="cancelDeleteUser()">Cancel</button>
+        <button class="btn" id="delete-user-alert_confirm-btn" onclick="confirmDeleteUser()">Confirm</button>
+      </div>
     </div>
     <div class="form">
       <h3 class="form_header">Register user account</h3>
@@ -38,6 +46,19 @@
         </div>
       </form>
     </div>
+
+    <table id="user-display">
+      <thead>
+        <tr>
+          <th>No</th>
+          <th>User Name</th>
+          <th>Full Name</th>
+          <th>Email</th>
+          <th>Birthday</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+    </table>
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
