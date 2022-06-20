@@ -93,7 +93,7 @@ submitBtn.addEventListener("click", function postUserInfo(e) {
         console.log(idUserUpdate);
         const userInfo = {
           userName: userName.value,
-          fullName: fullName.value,
+          fullName: clearSpaceAndCapitalizeFirstLetter(fullName.value),
           email: email.value,
           birthday: birthday.value,
         };
@@ -121,9 +121,9 @@ submitBtn.addEventListener("click", function postUserInfo(e) {
                 alert("Email đã tồn tại");
               } else {
                 const userInfo = {
-                  userName: userName.value,
-                  fullName: fullName.value,
-                  email: email.value,
+                  userName: userName.value.trim(),
+                  fullName: clearSpaceAndCapitalizeFirstLetter(fullName.value),
+                  email: email.value.trim(),
                   birthday: birthday.value,
                 };
                 overlayLoadingElement.classList.add("is-display-loading");
